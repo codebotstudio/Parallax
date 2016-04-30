@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tutorial Parallax</title>
+		<!-- CSS Code -->
+		<link rel="stylesheet" href="style.css">
+		<!-- JS Code -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('section[data-type="parallax_section"]').each(function(){
+				var $bgobj = $(this);
+				$(window).scroll(function(){
+					$window = $(window);
+					var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+					var coords = '50%' + yPos + 'px';
+
+					$bgobj.css({backgroundPosition: coords});
+				});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<section id="home" data-type="parallax_section" data-speed="10">
+			<article>
+				<div class="geek"></div>
+				<h2>Pagina: 1</h2>
+			</article>
+		</section>
+		<section id="section2" data-type="parallax_section" data-speed="10">
+			<article>
+				<div class="geek"></div>
+				<h2>Pagina: 2</h2>
+			</article>
+		</section>
+		<section id="section3" data-type="parallax_section" data-speed="10">
+			<article>
+				<div class="geek"></div>
+				<h2>Pagina: 3</h2>
+			</article>
+		</section>
+	</body>
+</html>

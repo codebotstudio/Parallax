@@ -1,0 +1,45 @@
+*, html{
+	margin: 0px;
+	padding: 0px;
+}
+h2{
+	color: #fff;
+	font-family: helvetica;
+	text-align: center;
+}
+#home{
+	background: url(img/frappe.jpg) 50% 0 no-repeat fixed;
+}
+#section2{
+	background: url(img/SUMMERSEASON.jpg) 50% 0 no-repeat fixed;
+}
+#section3{
+	background: url(img/tisana.jpg) 50% 0 no-repeat fixed;
+}
+#home, #section2, #section3{
+	margin: 0px auto;
+	min-height: 700px;
+	max-width: 1920px;
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#section2, #section3{
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	-o-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+article{
+	padding: 100px;
+}
+.geek{
+	background: url(img/logo.png);
+	display: block;
+	height: 136px;
+	margin: 0px auto;
+	width: 354px;
+}
